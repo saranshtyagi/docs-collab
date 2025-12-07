@@ -9,6 +9,7 @@ import TableCell from '@tiptap/extension-table-cell'
 import TableHeader from '@tiptap/extension-table-header'
 import TableRow from '@tiptap/extension-table-row'
 import { useEditor, EditorContent } from '@tiptap/react'
+import Underline from '@tiptap/extension-underline'
 import StarterKit from '@tiptap/starter-kit'
 
 import { useEditorStore } from '@/store/use-editor-store';
@@ -49,6 +50,7 @@ export const Editor = () => {
         },
         extensions: [
             StarterKit,
+            Underline,
             Image,
             ImageResize,
             Table, 
